@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(12, 12, 12);
+    height:100vh;
+    margin:0px;
+    overflow: hidden;
+    color:white;
+}
+h1{
+    text-align: center;
+}
+.image{
+    width:30vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+}
+.image[data-status="inactive"]{
+    display: none;
+}
+.image[data-status="active"] {
+    display: block;
+}
